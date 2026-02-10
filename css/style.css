@@ -628,6 +628,11 @@ small {
   margin-top: 100px;
 }
 
+.project-info a{
+  display:block;
+  text-align:center;
+}
+
 .project-info > img{
   width: min(600px, 100%);
 }
@@ -638,6 +643,26 @@ small {
   margin: 0 auto;
   object-fit: cover;
 }
+
+/* URL文字 */
+.url{
+  margin-top:12px;
+  font-size:14px;
+  color:#142a54;
+  text-decoration:underline;
+  transition:.3s;
+}
+
+/* hover */
+.project-info a:hover img{
+  transform:translateY(-6px);
+  opacity:.9;
+}
+
+.project-info a:hover .url{
+  letter-spacing:.05em;
+}
+
 
 .info-row{
   display: flex;
@@ -793,6 +818,7 @@ margin-top: 10vh;
   transform:translateY(0);
 }
 
+
 /* =========================
    responsive
 ========================= */
@@ -889,7 +915,7 @@ h3{
 }
 
 .banner-exp{
-  bottom: 0;
+  bottom: 5;
   padding: 1px 10px;
 }
 
@@ -1069,18 +1095,18 @@ h4{
 /* =========================
   work3
 ========================= */
-.project-title{
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 20px;
+.project-info img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* メイン画像 */
-.project-info > .inner > img{
-  width: 95%;
-  height: auto;
-  margin: 20px auto 30px;
+/* aタグ直下のimgだけ300px */
+.project-info > .inner > a > img{
+  height: 300px;
+  object-fit: cover;
 }
+
 
 /* 各説明ブロック */
 .project-info .info-row{
