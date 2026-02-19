@@ -227,7 +227,7 @@ p {
 
 .work-container{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 
@@ -306,7 +306,6 @@ p {
   width: 100%;
   height: 220px; /* 固定 */
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .site-img img {
@@ -735,10 +734,41 @@ small {
   overflow: hidden; 
 }
 
-.slide-container > h3{
+.slide-container > h1{
 text-align: center;
 font-size: 1.5rem;
 margin-top: 10vh;
+}
+
+.site > h2{
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.more-site{
+    margin-top: 50px; 
+    
+}
+
+.more-site ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.more-site ul li{
+  height: 340px; /* ←固定が一番安定 */
+  border-radius: 15px;
+  position: relative;
+  padding: 10px;
+}
+
+/* 画像アニメーション */
+.more-site ul li img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  opacity: 0.5;
 }
 
 .slide-container p{
@@ -775,16 +805,16 @@ margin-top: 10vh;
 }
 
 .top-slide .content:nth-child(1) {
-  background-image: url(../images/完成おせち.jpg);
+  background-image: url(../image/more1.png);
 }
 .top-slide .content:nth-child(2) {
-  background-image: url(../images/雨.png);
+  background-image: url(../image/figma3D.png);
 }
 .top-slide .content:nth-child(3) {
-  background-image: url(../images/2026.png);
+  background-image: url(../image/osechi.jpg);
 }
 .top-slide .content:nth-child(4) {
-  background-image: url(../images/html3D.png);
+  background-image: url(../image/guilty_logo.png);
 }
 
 /* content hover時 アニメーション */
@@ -814,19 +844,19 @@ margin-top: 10vh;
 
 /* 下段の画像 */
 .bottom-slide .content:nth-child(1) {
-  background-image: url(../images/figma3D.png);
+  background-image: url(../image/more2.png);
 }
 
 .bottom-slide .content:nth-child(2) {
-  background-image: url(../images/天橋立.png);
+  background-image: url(../image/more3.png);
 }
 
 .bottom-slide .content:nth-child(3) {
-  background-image: url(../images/走る.png);
+  background-image: url(../image/html3D.png);
 }
 
 .bottom-slide .content:nth-child(4) {
-  background-image: url(../images/ギルティーロゴ.png);
+  background-image: url(../image/2026.png);
 }
 
 /* scroll fade */
@@ -840,6 +870,7 @@ margin-top: 10vh;
   opacity:1;
   transform:translateY(0);
 }
+
 
 
 /* =========================
